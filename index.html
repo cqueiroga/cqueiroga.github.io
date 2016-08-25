@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+<!-- nav-bar container -->
+<nav class="navbar navbar-fixed-top">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#nav-bar">
+        &#9776;
+    </button>
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="CQ Portfolio Logo" /></a>
+	<div class="collapse navbar-toggleable-xs" id="nav-bar">
+		<ul class="nav navbar-nav pull-xs-right">
+			<li class="nav-item"><a href="#about">About</a></li>
+			<li class="nav-item"><a href="#skills">Skills</a></li>
+			<li class="nav-item"><a href="#projects">Projects</a></li>
+		</ul>
+	</div>
+</nav> <!-- end nav-bar -->
+	<div id="welcome-container">
+		<div id="welcome-caption">
+			<h1 class="display-1" id="name">Chris Queiroga</h1>
+			<h1 class="display-4" id="title">Web Developer</h1>
+		</div>
+	</div>
+
+<!-- about section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-content">
+                <div class="col-lg-6">
+                   <h2 class="display-4 section-title">About Me</h2>
+                    <p>Hi! My name is Chris Queiroga and I just graduated with a Computer Science degree and I'm ready to start my adventure in becoming a web developer. In my free time I enjoy playing games, hanging out with family and friends, photography and just reading about the latest and greatest technology. I enjoy pretty much anything to do with computers. Since high school I've always been interested in learning as much as I could with anything that included computers such as building computers, graphic design, 3D modeling and animation to now programming.</p>
+                    <p>Well I believe this wraps it up. I apologize if I bored you to death and if you want to find out more about me then please take a look around my site and you can even send me an email, if you would like. Thanks for stopping by!</p>
+                </div>
+                <div class="col-lg-6">
+                   <img src="img/headshot.jpg" class="m-x-auto d-block" alt="Chris Headshot" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- end about -->
+
+<!-- skills section -->
+<section id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="skills-content">
+                <div class="col-lg-6">
+                   <h2 class="display-4 section-title">Skills</h2>
+                    <div id="chart-container">
+                        <div class="col-sm-3" id="chart-left">
+                            <ul class="titles">
+                                <li id="html">HMTL5/CSS3</li>
+                                <li id="adobe">Adobe Applications</li>
+                                <li id="js">JavaScript/jQuery</li>
+                                <li id="java">Java</li>
+                                <li id="php">PHP</li>
+                                <li id="sql">SQL</li>
+                                <li id="linux">Linux</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3" id="chart-right">
+                            <ul class="bars">
+                                <li class="bar" data-percentage="75"><div>&nbsp;</div></li>
+                                <li class="bar" data-percentage="70"><div>&nbsp;</div></li>
+                                <li class="bar" data-percentage="65"><div>&nbsp;</div></li>
+                                <li class="bar" data-percentage="55"><div>&nbsp;</div></li>
+                                <li class="bar" data-percentage="50"><div>&nbsp;</div></li>
+                                <li class="bar" data-percentage="50"><div>&nbsp;</div></li>
+                                <li class="bar" data-percentage="45"><div>&nbsp;</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/skill-logos.jpg" class="m-x-auto d-block" id="skill-logos" alt="Development Logos" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- end skills -->
+
+<!-- projects section -->
+<section id="projects">
+    <div class="container">
+       <!-- Buns on the Run project -->
+        <div class="row">
+            <div class="project-content">
+                <div class="col-lg-6">
+                 <h2 class="display-4 section-title">Projects</h2>
+                   <h3 class="display-5 project-name">Buns on the Run</h3>
+                   <p>Buns on the Run was my first website that I created for a school project. I used HTML, CSS and Dreamweaver to create the site. I designed the entire site including their logo which they still use on their YouTube channel. One of the requirements was to create a template after the homepage was created to keep from having to recreate the same elements that would be on all the additional pages, such as the logo, navigation links and the footer.</p>
+                   <p>One of the more difficult parts of the project was trying to determine how to layout the steps of the recipes along with the images. The best way I felt to display this information to the users was to implement a pure CSS slideshow of the images numbered corresponding to the step they would be in following the recipe.</p>
+                   <p>One of my favorite parts of the project besides the CSS slideshow would have to be on the recipes page. I chose that it would be best to show the different types of recipes they do by categories. As you hover over the images, CSS is used to display each category name for those recipes as displayed in the images of the website.</p>                  
+                </div>
+                
+                <div class="col-lg-6">
+                   <!-- thumbnails that link to larger image using lightbox -->
+                   <a href="img/slideshow/buns-ss-home.jpg" data-lightbox="bunsontherun">
+                   		<img src="img/slideshow/buns-ss-home.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/buns-ss-mtc.jpg" data-lightbox="bunsontherun">
+                   		<img src="img/slideshow/buns-ss-mtc.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/buns-ss-recipe-cat.jpg" data-lightbox="bunsontherun">
+                   		<img src="img/slideshow/buns-ss-recipe-cat.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/buns-ss-recipe.jpg" data-lightbox="bunsontherun">
+                   		<img src="img/slideshow/buns-ss-recipe.jpg" class="img-thumbnail">
+                   </a>
+                   <small class="caption pull-left">(Click to view larger image)</small>
+                </div>
+            </div>
+        </div> <!-- end Buns on the Run project -->
+        
+        <!-- Dimes Times project -->
+		<div class="row">
+        	<div class="project-content">
+                <div class="col-lg-6">
+                 <h3 class="display-5 project-name">Dimes Times</h3>
+					<p>Dimes Times was a site created for a project while I was in school. A friend was interested in having a site designed to showcase his artwork and books that he's written.</p>
+					<p>I designed this site with HTML and CSS later on revisited the project to practice making a site that was currently made for desktops to be mobile responsive using media queries.</p>
+					<p>One of the requirements for the project was to use a table in the design of one of the pages. I felt it was best to use the table to show the books that were for sale and providing links if the users were interested in purchasing them. The table design became difficult when making the site mobile responsive but also taught me a lot of how to manipulate elements while trying to get the perfect design for a mobile site.</p>
+					<p>One of my favorite parts of Dimes Times was my decision to make the whole site grayscale. While doing this I felt it would be best to make all of the images grayscale using CSS but also letting the user have the option to see the true representation of the artist's work by hovering of the images to view them in color.</p>
+					<p>In the end I actually believe the mobile site is better than the desktop site, but I'll leave that for you to judge.</p>
+                </div>
+                
+                <div class="col-lg-6">
+                   <!-- thumbnail section which links to larger image using lightbox -->
+                   <a href="img/slideshow/dimes-ss-home.jpg" data-lightbox="dimestimes">
+                   		<img src="img/slideshow/dimes-ss-home.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/dimes-ss-art.jpg" data-lightbox="dimestimes">
+                   		<img src="img/slideshow/dimes-ss-art.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/dimes-ss-books.jpg" data-lightbox="dimestimes">
+                   		<img src="img/slideshow/dimes-ss-books.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/dimes-ss-contact.jpg" data-lightbox="dimestimes">
+                   		<img src="img/slideshow/dimes-ss-contact.jpg" class="img-thumbnail">
+                   </a>
+                   <small class="caption pull-left">(Click to view larger image)</small>
+                </div>
+            </div>
+		</div> <!-- end Dimes Times project -->
+            
+             <!-- Yama project section -->
+		<div class="row">
+			<div class="project-content">
+                <div class="col-lg-6">
+                 <h3 class="display-5 project-name">Yama Sushi Bar</h3>
+                   <p>The Yama Sushi Bar website was created as a school project for a Dreamweaver class as well as the logo that is used on the site. We were told to start with a basic template and add in our own CSS to create our own design. One of the main topics discussed in the class and which we had to implement in this project was keeping in mind that the site would have to work on mobile devices.</p>
+                   <p>The most difficult part in this project was most likely the menu page. I really liked how it was designed for desktops with all of the images of the food surrounding the menu but was really questioning how I would keep this design for mobile devices. I came to the conclusion that I wouldn't be able to show as many images and still have the content be easily accessible, so I felt that removing the images would be the best choice and to have the menu fill the width of the page.</p>
+                   <p>I was really happy with the outcome of this project on desktops as well as on mobile devices</p>
+                </div>
+                <div class="col-lg-6">
+                   <!-- thumbnail section which links to larger image using lightbox -->
+                   <a href="img/slideshow/yama-ss-home.jpg" data-lightbox="yama">
+                   		<img src="img/slideshow/yama-ss-home.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/yama-ss-menu.jpg" data-lightbox="yama">
+                   		<img src="img/slideshow/yama-ss-menu.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/yama-ss-about.jpg" data-lightbox="yama">
+                   		<img src="img/slideshow/yama-ss-about.jpg" class="img-thumbnail">
+                   </a>
+                   <a href="img/slideshow/yama-ss-contact.jpg" data-lightbox="yama">
+                   		<img src="img/slideshow/yama-ss-contact.jpg" class="img-thumbnail">
+                   </a>
+                   <small class="caption pull-left">(Click to view larger image)</small>
+                </div>
+            </div>
+		</div> <!-- end Yama project -->
+    </div>
+</section> <!-- end projects sections -->
+
+<!-- footer -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div id="footer">
+				<div class="col-md-3">
+					<a href="https://github.com/cqueiroga"><i class="fa fa-github-square" aria-hidden="true"></i>GitHub</a>
+				</div>
+				<div class="col-md-3">
+					<a href="https://codepen.io/cqueiroga"><i class="fa fa-codepen" aria-hidden="true"></i>CodePen</a>
+				</div>
+				<div class="col-md-3">
+					<i class="fa fa-copyright" aria-hidden="true"></i>Chris Queiroga 2016</a>
+				</div>
+				<div class="col-md-3">
+					<a href="mailto:chris.queiroga@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>chris.queiroga@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+
+<script
+src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="js/lightbox.min.js"></script>
+</body>
+</html>

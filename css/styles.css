@@ -6,6 +6,7 @@ body {
 	padding-top: 65px;
 }
 h1,h2,h3,h4,h5 {
+	font-family: 'Oswald', sans-serif;
     color: black;
 }
 h6 {
@@ -42,11 +43,12 @@ p {
     border: 1px solid white;
     border-radius: 0;
 }
-img {
-    max-width: 100%;
-}
 #welcome-container {
-    background: url('../img/welcome-image.jpg') center center no-repeat;
+	/* background overlay */
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ), url('../img/welcome-image.jpg') center center no-repeat;
     background-size: cover;
     color: white;
     height: 100%;
@@ -70,17 +72,20 @@ img {
 .hide {
 	opacity: 0;
 }
-.about-content, .skills-content, .project-content {
-    padding: 7em 0;
-    overflow: hidden;
+.container {
+	padding-top: 20px;
 }
-.about-content img, .skills-content img {
-    padding-top: 25px;
+.about-content, .skills-content, .project-content {
+    padding: 4em 0;
+    overflow: hidden;
 }
 .section-title {
     padding-bottom: 10px;
     font-weight: 600;
 	border-bottom: 2px solid black;
+}
+#projects-title, #skills-title, #about-title {
+	margin-left: 15px;
 }
 #skill-logos {
     width: 80%;
@@ -92,7 +97,7 @@ img {
 #chart-left li {
     border-bottom: 1px solid black;
 }
-.titles {
+.skills {
     list-style-type: none;
     padding-left: 0;
     font-size: 1.3em;
@@ -137,6 +142,9 @@ img {
 	margin: 25px 15px 0 15px;
 	width: 40%;
 }
+a[data-lightbox]:hover {
+	text-decoration: none;
+}
 .caption {
 	color: #333;
 	padding-top: 10px;
@@ -146,7 +154,10 @@ footer {
 	padding: 30px 0;
 	
 }
-#footer, #footer a:link, #footer a:visited {
+footer {
+	color: white;
+}
+#footer a:link, #footer a:visited {
 	color: white;
 	text-decoration: underline;
 }
@@ -157,7 +168,7 @@ footer {
 /* media queries */
 @media (min-width: 375px) and (max-width: 767px) {
 	#welcome-container {
-		height: 50%;
+		height: 35%;
 	}
 	#name {
 		font-size: 1.8em
@@ -175,9 +186,48 @@ footer {
 		width: 100%;
 		text-align: center;
 	}
+	#chart-left li {
+		border-bottom: none;
+		display: inline-block;
+		padding: 0 15px 0 15px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		margin: 5px 0;
+	}
+	.img-thumbnail {
+		width: 72%;
+		text-align: center;
+	}
+	.thumbnails {
+		text-align: center;
+	}
 	.project-name {
 		font-size: 2em;
+	}
+	footer {
+		padding: 15px 0;
+		line-height: 1.7em;
+	}
+	footer .container {
+		padding-top: 0px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1096px) {
+	#welcome-container {
+		height: 50%;
+	}
+	#name {
+		font-size: 3em;
+	}
+	#title {
+		font-size: 2.7em;
+	}
+	.section-title {
 		text-align: center;
+	}
+	.project-name {
+		font-size: 2em;
 	}
 	footer {
 		padding: 15px 0;
